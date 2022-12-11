@@ -2,3 +2,10 @@
 flex-grow: unset;
 }
 
+.jumbotron {
+    background-image: url("../images/laptop-camera.jpg");
+    background-size: cover;
+}
+
+
+
