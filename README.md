@@ -69,7 +69,7 @@ This Portfolio was created with the intent to showcase my work in the future, by
 
 ## Deployment:
 
-* Following is a link to the deployed version of the Website: 'https://davvid96.github.io/Dawid-Portfolio-Page/'
+* Following is a link to the deployed version of the Website: 'https://davvid96.github.io/Bootstrap-Portfolio/'
 
 ## License:
 
