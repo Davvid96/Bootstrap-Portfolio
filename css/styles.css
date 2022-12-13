@@ -99,6 +99,11 @@ flex-grow: unset;
 
   }
 
+  /* Button */
+  .btn:hover {
+    box-shadow: 24px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
 /* Media Query */
 @media only screen and (max-width: 992px) {
     .section-title {
