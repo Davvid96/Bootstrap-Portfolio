@@ -60,7 +60,7 @@ flex-grow: unset;
 
 /* Section Title */
 .section-title {
-    text-align: right;
+    /* text-align: right; */
     height: auto;
     border-right: var(--primary-border) black;
   }
@@ -96,5 +96,17 @@ flex-grow: unset;
   }
 
   .card-title {
-    
+
   }
+
+/* Media Query */
+@media only screen and (max-width: 992px) {
+    .section-title {
+        border-right: none;
+        border-bottom: var(--primary-border) black;
+    }
+    .nav-container {
+        background-color: var(--secondary-color);
+    }
+}
+
