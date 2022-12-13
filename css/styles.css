@@ -1,126 +1,136 @@
 :root {
-    --primary-color: rgb(127, 255, 212);
-    --secondary-color: rgb(80, 78, 78);
-    --body-color: rgb(201, 200, 200);
-    --outside-color: whitesmoke;
-    --primary-border: 2px solid;
-    --work-background: rgb(77, 72, 72);
-  }
-
-body {
-    background-color: var(--outside-color);
+  --primary-color: rgb(127, 255, 212);
+  --secondary-color: rgb(80, 78, 78);
+  --body-color: rgb(201, 200, 200);
+  --outside-color: whitesmoke;
+  --primary-border: 2px solid;
+  --work-background: rgb(77, 72, 72);
 }
 
-  .navbar-collapse {
-flex-grow: unset;
+body {
+  background-color: var(--outside-color);
+}
+
+.navbar-collapse {
+  flex-grow: unset;
 }
 
 /* Main Grid */
 .page-wrapper {
-    background-color: var(--body-color);
-  }
+  background-color: var(--body-color);
+}
 
 /* Header Section */
 .header-container {
-    background-color: var(--secondary-color);
-    height: 100px;
-  }
-  
-  .header-title-background {
-    display: flex;
-    background-color: var(--primary-color);
-    height: 80px;
-    margin: auto 0;
-    padding: 0 20px 0 40px;
-    border-radius: 5px;
-  }
-  
-  .header-title {
-    margin: auto 0;
-    color: var(--secondary-color);
-    font-weight: bold;
-  }
+  background-color: var(--secondary-color);
+  height: 100px;
+}
 
-  /* nav section */
-  .nav-link {
-    color: var(--primary-color);
-    padding: 10px 5px 0px;
-    border-bottom: var(--primary-border) var(--primary-color);
-    text-decoration: none;
-    font-size: 24px;
-  }
+.header-title-background {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 80px;
+  margin: auto 0;
+  padding: 0 20px 0 40px;
+  border-radius: 5px;
+}
 
-  .navbar-toggler-icon {
-    border: 2px solid;
-    border-color: var(--primary-color);
-    border-radius: 5px;
-    background-image: url(../images/hamburger.png);
-  }
+.header-title {
+  margin: auto 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
 
-  .navbar-toggler {
-    border: revert;
-  }
+/* nav section */
+.nav-link {
+  color: var(--primary-color);
+  padding: 10px 5px 0px;
+  border-bottom: var(--primary-border) var(--primary-color);
+  text-decoration: none;
+  font-size: 24px;
+}
 
-  /* jumbotron */
+.navbar-toggler-icon {
+  border: 2px solid;
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  background-image: url(../images/hamburger.png);
+}
+
+.navbar-toggler {
+  border: revert;
+}
+
+/* jumbotron */
 .jumbotron {
-    background-image: url("../images/desk.jpg");
-    background-size: cover;
-    text-align: center;
+  background-image: url("../images/desk.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
 .jumbotron-text {
-  background-color: rgba(255, 255, 255, 0.32);
+  background-color: rgba(255, 255, 255, 0.489);
+  /* font-weight: bold; */
 }
 
 /* Section Title */
 .section-title {
-    height: auto;
-    border-right: var(--primary-border) black;
-  }
+  height: auto;
+  border-right: var(--primary-border) black;
+}
 
-  .list-group-item.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
+.list-group-item.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+  border: var(--primary-border) var(--primary-color);
+}
 
 /* Buttons */
 .btn-primary {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  box-shadow: 24px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Contact Section */
-  .contact-link {
-    margin: auto 0;
-    color: var(--secondary-color);
-    padding: 10px 5px 0px;
-    border-bottom: 4px solid var(--secondary-color);
-    text-decoration: none;
-    font-size: 24px;
-  }
+.contact-link {
+  margin: auto 0;
+  color: var(--secondary-color);
+  padding: 10px 5px 0px;
+  border-bottom: 4px solid var(--secondary-color);
+  text-decoration: none;
+  font-size: 24px;
+}
 
-  footer {
-    background-color: var(--secondary-color);
-  }
-
-  /* Cards */
-  .card {
-    border: var(--primary-border) var(--primary-color);
-  }
-
-  /* Button */
-  .btn:hover {
-    box-shadow: 24px 10px 5px 0px rgba(0,0,0,0.75);
-  }
+/* footer */
+footer {
+  background-color: var(--secondary-color);
+}
 
 /* Media Query */
 @media only screen and (max-width: 992px) {
-    .section-title {
-        border-right: none;
-        border-bottom: var(--primary-border) black;
-    }
-    .nav-container {
-        background-color: var(--secondary-color);
-    }
-}
+  .section-title {
+    border-right: none;
+    border-bottom: var(--primary-border) black;
+  }
 
+  .nav-container {
+    background-color: var(--secondary-color);
+  }
+
+  .list-group {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .list-style {
+    text-align: center;
+  }
+}
