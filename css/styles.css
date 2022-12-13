@@ -1,9 +1,10 @@
 :root {
     --primary-color: aquamarine;
-    --secondary-color: rgb(56, 54, 54);
+    --secondary-color: rgb(80, 78, 78);
     --body-color: rgb(201, 200, 200);
     --outside-color: whitesmoke;
-    --primary-border: 4px solid;
+    --primary-border: 2px solid;
+    --work-background: rgb(77, 72, 72);
   }
 
 body {
@@ -87,4 +88,13 @@ flex-grow: unset;
 
   footer {
     background-color: var(--secondary-color);
+  }
+
+  /* Cards */
+  .card {
+    border: var(--primary-border) var(--primary-color);
+  }
+
+  .card-title {
+    
   }
