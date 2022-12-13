@@ -1,5 +1,5 @@
 :root {
-    --primary-color: aquamarine;
+    --primary-color: rgb(127, 255, 212);
     --secondary-color: rgb(80, 78, 78);
     --body-color: rgb(201, 200, 200);
     --outside-color: whitesmoke;
@@ -32,18 +32,16 @@ flex-grow: unset;
     height: 80px;
     margin: auto 0;
     padding: 0 20px 0 40px;
+    border-radius: 5px;
   }
   
   .header-title {
     margin: auto 0;
     color: var(--secondary-color);
+    font-weight: bold;
   }
 
-/* Nav Section */
-.nav-container {
-
-  }
-  
+  /* nav section */
   .nav-link {
     color: var(--primary-color);
     padding: 10px 5px 0px;
@@ -52,15 +50,30 @@ flex-grow: unset;
     font-size: 24px;
   }
 
+  .navbar-toggler-icon {
+    border: 2px solid;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    background-image: url(../images/hamburger.png);
+  }
 
+  .navbar-toggler {
+    border: revert;
+  }
+
+  /* jumbotron */
 .jumbotron {
-    background-image: url("../images/laptop-camera.jpg");
+    background-image: url("../images/desk.jpg");
     background-size: cover;
+    text-align: center;
+}
+
+.jumbotron-text {
+  background-color: rgba(255, 255, 255, 0.32);
 }
 
 /* Section Title */
 .section-title {
-    /* text-align: right; */
     height: auto;
     border-right: var(--primary-border) black;
   }
@@ -93,10 +106,6 @@ flex-grow: unset;
   /* Cards */
   .card {
     border: var(--primary-border) var(--primary-color);
-  }
-
-  .card-title {
-
   }
 
   /* Button */
