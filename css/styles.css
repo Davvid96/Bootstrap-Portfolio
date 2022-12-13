@@ -6,15 +6,23 @@
     --primary-border: 4px solid;
   }
 
-.navbar-collapse {
+body {
+    background-color: var(--outside-color);
+}
+
+  .navbar-collapse {
 flex-grow: unset;
 }
+
+/* Main Grid */
+.page-wrapper {
+    background-color: var(--body-color);
+  }
 
 /* Header Section */
 .header-container {
     background-color: var(--secondary-color);
     height: 100px;
-    flex-wrap: wrap;
   }
   
   .header-title-background {
@@ -49,5 +57,34 @@ flex-grow: unset;
     background-size: cover;
 }
 
+/* Section Title */
+.section-title {
+    text-align: right;
+    height: auto;
+    border-right: var(--primary-border) black;
+  }
 
+  .list-group-item.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
 
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+  .contact-link {
+    margin: auto 0;
+    color: var(--secondary-color);
+    padding: 10px 5px 0px;
+    border-bottom: 4px solid var(--secondary-color);
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+  }

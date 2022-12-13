@@ -12,11 +12,11 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container page-wrapper px-0">
     <nav class="navbar navbar-expand-lg header-container">
       <div class="container-fluid ps-0">
         <div class="header-title-background">
-          <h1 class="navbar-brand header-title">Dawid's' Portfolio</h1>
+          <h1 class="navbar-brand header-title">Dawid's Portfolio</h1>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,14 +37,13 @@
         <h1 class="display-5 fw-bold">Thanks For Coming</h1>
         <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in
           previous
-          versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+          versions of Bootstrap.</p>
       </div>
     </div>
     <div class="container">
       <div class="row row-cols-2">
-        <div class="col-2" id="about-me">About Me</div>
-        <div class="col-10">
+        <h2 class="col-2 section-title pe-2 mb-3" id="about-me">About Me</h2>
+        <div class="col-10 mb-3">
           <p class="about-text">
             Hi! My name is Dawid and this is my first ever Portfolio page
             where I would like to document my progress as a Web Developer. The aim
@@ -70,56 +69,50 @@
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
-        <div class="col-2" id="skills">Skills</div>
-        <div class="col-10">
-          <h4 class="text-center">The skills I want to learn from this Bootcamp!</h2>
+        <h2 class="col-2 section-title pe-2 mb-3" id="skills">Skills</h2>
+        <div class="col-10 mb-3">
+          <h4 class="text-center mb-3">The skills I want to learn from this Bootcamp!</h2>
             <div class="row">
               <div class="col-4">
                 <div class="list-group" id="list-tab" role="tablist">
-                  <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-javascript"
-                    role="tab" aria-controls="list-home">HTML/CSS</a>
-                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-profile"
-                    role="tab" aria-controls="list-profile">Javascript</a>
-                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-messages"
-                    role="tab" aria-controls="list-messages">API's</a>
-                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-settings"
-                    role="tab" aria-controls="list-settings">React</a>
+                  <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-html-css"
+                    role="tab">HTML/CSS</a>
+                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-javascript"
+                    role="tab">Javascript</a>
+                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-apis"
+                    role="tab">API's</a>
+                  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-react"
+                    role="tab">React</a>
                 </div>
               </div>
               <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="list-html-css" role="tabpanel"
-                    aria-labelledby="list-home-list">HTML/CSS</div>
-                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
+                  <div class="tab-pane fade show active" id="list-html-css" role="tabpanel">HTML/CSS</div>
+                  <div class="tab-pane fade" id="list-javascript" role="tabpanel">...
                   </div>
-                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...
+                  <div class="tab-pane fade" id="list-apis" role="tabpanel">...
                   </div>
-                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...
+                  <div class="tab-pane fade" id="list-react" role="tabpanel">...
                   </div>
                 </div>
               </div>
             </div>
         </div>
-        <div class="col-2">My Work</div>
-        <div class="col-10">
+        <h2 class="col-2 section-title pe-2 mb-3" id="my-work">My Work</h2>
+        <div class="col-10 mb-3">
           <div class="row row-cols-2 text-center">
             <div class="col-12">
-              <div class="card text-center">
-                <div class="card-header">
-                  Featured
-                </div>
+              <div class="card mb-3">
+                <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Horiseon</h5>
-                  <p class="card-text">Horiseon Webpage!</p>
+                  <p class="card-text">Horiseon WebPage!</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">
-                  2 days ago
                 </div>
               </div>
             </div>
             <div class="col-6">
-              <div class="card">
+              <div class="card mb-3">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">LED Wall</h5>
@@ -129,7 +122,7 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="card">
+              <div class="card mb-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Calculator</h5>
@@ -139,7 +132,7 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="card">
+              <div class="card mb-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Pastel Puzzels</h5>
@@ -149,7 +142,7 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="card">
+              <div class="card mb-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Run Body</h5>
@@ -160,9 +153,9 @@
             </div>
           </div>
         </div>
-        <div class="col-2">Contact Me</div>
-        <div class="col-10">
-          <div class="container text-center">
+        <h2 class="col-2 section-title pe-2 mb-3" id="contact-me">Contact Me</h2>
+        <div class="col-10 mb-3">
+          <div class="container text-center ">
             <div class="row">
               <div class="col">
                 <a class="contact-link" href="tel:07954125878">07954125878</a>
@@ -178,7 +171,7 @@
         </div>
       </div>
     </div>
-    <footer class="container-fluid p-3 mb-2 bg-secondary bg-gradient text-white text-center">
+    <footer class="container-fluid p-3 mb-2 text-white text-center ">
         <h2 class="footer-text">Thanks for Viewing! ❤️️ by Dawid</h2>
     </footer>
   </div>
